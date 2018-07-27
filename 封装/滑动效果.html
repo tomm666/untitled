@@ -1,0 +1,39 @@
+<div class="main container">
+    <div class="nav-panel">
+        <ul class="nav nav-news">
+            <li>当前位置：{dede:field name='position'/}</li>
+        </ul>
+    </div>
+    <div class="news-info-details">
+        <div class="news-com-title">
+            <h2>{dede:field.title/}</h2>
+            <p>发表时间: {dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</p>
+        </div>
+        <div class="news-com-info">
+            <div>{dede:field.body/}</div>
+            <div style="text-align: center;">&nbsp;</div>
+            <div style="text-align: center;">
+                {dede:prenext get='pre'/}
+                {dede:prenext get='next'/}
+            </div>
+        </div>
+
+    </div>
+   <!--link start-->
+    <div class="link">
+        <div class="row">
+            <div class="col-sm-9 col-md-10">
+                <div class="link-list">
+                    <div>
+                        相关内容:
+                        {dede:likearticle row='5'}
+                        <a href='[field:arcurl/]'>[field:title/]</a>
+                        {/dede:likearticle}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

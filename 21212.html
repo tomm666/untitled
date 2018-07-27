@@ -1,0 +1,47 @@
+<section id="wrapper">
+    <div id="wrapperInner">
+        <div>
+            <div id="content" class="listIndex">
+                <div id="contentHead">
+                    当前您在的位置：{dede:field name='position'/}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
+                    &nbsp; &nbsp; &nbsp;<span>作者：{dede:field.writer/}</span>
+                </div>
+                &nbsp;
+                <p>
+                </p>
+
+                <div style="WIDTH: 600px; HEIGHT: 386px" width="600" cellspacing="0" cellpadding="0" border="0"
+                       align="center">
+                    <div>
+                    <div>
+                        <div colspan="2" style="VERTICAL-ALIGN: top">
+                            <p><font size="2"><strong><font size="3">{dede:field.title/}</font></strong>&nbsp;</font></p>
+
+                            <div style="LINE-HEIGHT: 22px">
+                                <p><font size="2">　{dede:field.body/}</font></p>
+
+                            </div>
+                            <font size="2"><br>
+                            </font>
+
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div>
+                        {dede:prenext get='pre'/}
+                        {dede:prenext get='next'/}
+                    </div>
+                </div>
+
+
+                <p></p>
+
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+
+</section>

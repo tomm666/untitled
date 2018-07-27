@@ -1,0 +1,64 @@
+
+
+<div class="section-container section">
+    <section style="background-color:rgb(255,255,255);">
+        <div class="container ">
+            <div>
+                <div class="grid-control-1-col section">
+                    <div class="row ">
+                        <div class="col col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0 ">
+                            <div>
+                                <div class="sub-title section">
+
+                                    <div class="h3 text-center p3 margin-top-md-3xl margin-bottom-md-xxl margin-top-sm-3xl margin-bottom-sm-xxl margin-top-3xl margin-bottom-xxl">
+                                        您当前的位置: &nbsp;{dede:field name='position'/}&nbsp;
+                                    </div>
+
+                                </div>
+                                <div class="press-card-container aiabase parbase section">
+                                    <div>
+                                        <ul class="list-13">
+
+                                            <li>
+
+
+                                                <a href="[field:arcurl/]"
+                                                   target="_self" aria-labelledby="article-1017833424">
+
+                                                    <div class="margin-bottom-xs" id="article-1017833424">
+                                                        {dede:field.title/}
+                                                        <br><span>{dede:field name='pubdate' function='GetDateMk(@me)'/}</span>
+                                                            <span>来源：{dede:field.source/};</span>
+                                                    </div>
+
+                                                    <p class="bt3 p3">
+                                                        {dede:field.body/}
+                                                    </p>
+                                                </a>
+
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="button aiabase parbase section">
+                                    <div class="margin-top-md-xxl margin-bottom-md-3xl margin-top-sm-xxl margin-bottom-sm-3xl margin-top-l margin-bottom-3xl">
+                                        <div>
+                                            {dede:prenext get='pre'/}
+                                            {dede:prenext get='next'/}
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>

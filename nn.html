@@ -1,0 +1,35 @@
+<main id="content">
+    <div id="news">
+        <section class="intro-news-detail">
+
+            <div class="content-wrap">
+                <div class="content-detail">
+                    <div class="path">
+                        <ul>
+                            <li>您当前的位置: &nbsp;{dede:field name='position'/}&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="detail-wrap">
+                        <div class="info-head">
+                            <div class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{dede:field name='pubdate' function='GetDateMk(@me)'/}&nbsp;&nbsp;<span>来源：{dede:field.source/};</span></font></font></div>
+                            <h1 class="info-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{dede:field.title/}</font></font></h1>
+                        </div>
+                        <div class="editor">
+                            <div class="page-skin1">
+                                <p>
+                                    <font style="vertical-align: inherit;">{dede:field.body/}</font>
+                                </p>
+
+                            </div>
+                            <div>
+                                {dede:prenext get='pre'/}
+                                {dede:prenext get='next'/}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
